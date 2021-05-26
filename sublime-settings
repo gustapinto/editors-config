@@ -1,18 +1,26 @@
 {
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
 	"draw_white_space": "all",
-	"ignored_packages":
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Fira Code",
+	"font_options":
 	[
-		"Vintage"
+		"gray_antialias",
+		"subpixel_antialias",
 	],
+	"font_size": 9,
+	"index_exclude_gitignore": false,
+	"index_skip_unknown_extensions": false,
 	"rulers":
 	[
 		72,
 		80,
-		80.2,
+		80.1,
 		100,
+		120,
 	],
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+	"word_wrap": true,
 }

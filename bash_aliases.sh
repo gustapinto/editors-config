@@ -9,3 +9,8 @@ dcexec() {
 
 # Git aliases
 alias adog='git log --all --decorate --oneline --graph'
+
+# Utils
+chownr() {
+  sudo chown -R $USER:$USER "$1"
+}

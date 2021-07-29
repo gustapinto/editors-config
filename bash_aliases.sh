@@ -1,8 +1,10 @@
 # Docker aliases
 alias dcup='docker-compose up -d'
 alias dcdown='docker-compose down'
-alias dstop='docker stop $(docker ps -q)'
-alias dinit='sudo systemctl start docker && dcup'
+# ... | xargs ... <- pass the pipe value as a variable to the next call
+alias dstop='docker ps -q | xargs docker stop'
+alias drefresh='dstop && dcup'
+alias dinit='sudo systemctl start docker && drefresh'
 dcexec() {
     docker-compose exec "$1" "$2"
 }
